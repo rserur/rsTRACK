@@ -1,0 +1,51 @@
+.jumbotron .alert-info {
+	background-color: darken(@brand-primary, 6%);
+    border-color: darken(@brand-primary, 4%);
+	color: lighten(@brand-primary, 40%); 
+	font-size: @font-size-base * 1.25;
+    text-transform: uppercase;
+    padding: @alert-padding * .60;
+}
+
+.jumbotron .alert-info strong {
+    font-weight: 700;
+    color: lighten(@brand-primary, 60%); 
+}
+
+.navbar {
+	font-size: @font-size-base * 1.10;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+.jumbotron {
+    padding-top: 76px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: lighten(@brand-info, 10%);
+  text-align: center;
+}
+
+.doc a {
+    font-weight: bold;
+}

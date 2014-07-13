@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+        <?php if (isset($title)): ?>
+            <title>rsTRACK.org: <?= htmlspecialchars($title) ?></title>
+        <?php else: ?>
+            <title>rsTRACK.org</title>
+        <?php endif ?>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+		 
+	</head>   
+<body>
+<!-- start javascript -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jquery ui datepicker-->
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		  <script>
+		  $(function() {
+		    $( "#datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
+		  });
+		  </script>
+	<script>
+
+		<!-- Detect URL & add active class to nav li -->
+		$(document).ready(function(){
+
+		var url = window.location;
+		// Will only work if string in href matches with location
+		$('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+
+		// Will also work for relative and absolute hrefs
+		$('ul.nav a').filter(function() {
+		    return this.href == url;
+		}).parent().addClass('active');
+	    
+
+		// save study name as javascript var
+		var $study_name = <?php echo json_encode($study_name) ?>;
+
+		// hide study login info and logout link if no one is logged in
+		if ($study_name === null)
+		{
+			$('#login_info, #signout, #navbar, #jumbo').hide();
+		}
+
+	  });
+	</script>
+	<!-- end javascript -->
+	<!-- start wrap-->
+	<div id="wrap">
+	
+	
+
+	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#">RS<strong>T</strong></a>
+	  </div>
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse" id="navbar-collapse">
+	  	<span class="navbar-text">Track My:</span> 
+	    <ul class="nav navbar-nav">
+	    	<li><a href="index.php">Appointments</a></li>
+	    	<li><a href="mystudy.php">Study</a></li>
+		    <li><a href="subjects.php">Subjects</a></li>
+		    <li><a href="resources.php">Resources</a></li>
+	    </ul>
+
+	    <ul id="signout" class="nav navbar-nav navbar-right">
+		    <li><a href="signout.php">Log Out</a></li>
+	    </ul>
+	  </div>
+	  <!-- /.navbar-collapse -->
+	</nav>
+
+	<div id="jumbo" class="jumbotron">
+		<div class="container">
+			<h1><a href="index.php">RS<b>TRACK</b>.org</a></h1>
+			<div id="login_info" class="alert alert-info text-right">
+				Welcome <strong><?= $user[0]['username'] ?></strong> -  
+				You are tracking <strong>The <?= $study_name[0]['study'] ?> Study</strong>.
+			</div>
+		</div>	     			
+	</div>
+
+	<div class="container clear-top">
+		<div id="middle">
+			<!-- start content -->
+content
+					<!-- end content -->
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="container">
+				<p class="text-muted">Place sticky footer content here.</p>
+			</div>
+		</div>
+
+		</div>
+		<!-- end wrap -->
+		
+	</body>
+</html>
+
+
