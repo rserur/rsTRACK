@@ -1,8 +1,8 @@
-[rsTRACK](http://www.rstrack.org)
+[rsTRACK.org](http://www.rstrack.org)
 ==========
 A Fall 2013 [CS50](http://cs50.harvard.edu/) Final Project
 
-rsTRACK is a PHP-, jQuery-, and Bootstrap- driven web application that was built to track all appointments booked for a clinical research study, tailored for clinical research coordinators and assistants. RSTRACK was created to assist in:
+rsTRACK is a PHP-, jQuery-, and Bootstrap- driven web application built to track all appointments booked for a clinical research study, tailored for clinical research coordinators and assistants. RSTRACK was created to assist in:
 
 - Scheduling study appointments
 - Tracking subject progress to completion
@@ -10,7 +10,7 @@ rsTRACK is a PHP-, jQuery-, and Bootstrap- driven web application that was built
 
 In research coordination, these essential tasks are heavily interwoven with one another. RSTRACK is intended to be an all-in-one tool.
 
-![Screencast](public/img/screencast.png)
+![Screencast](public/img/screencast.gif)
 
 Database
 ==========
@@ -19,24 +19,24 @@ Database
 Features
 ==========
 
-1. The My Study Page Build your Study
+1. The My Study Page - Build your Study
 ---------------------------------------
 Use the My Study page to build the framework of your study.
 
-##Timepoints
+###Timepoints
 The typical framework of a clinical research study, especially those that are longitudinal, consists of timepoints that each call for certain components to be completed by all subjects. On the My Study page, add timepoints that are fundamental to study design.
 
 For instance, do each of your subjects complete a baseline timepoint? Are they followed up with a year later? Then adding two timepoints named "Baseline" and "1-Year" might be a good start!
 
-##Components
+###Components
 Once your timepoints are set, add components to each. Components are the parts of your study that must occur at a certain timepoint. For instance, all clinical studies must have at minimum a consent. Since a consent must happen at baseline, you could add a "Consent" component to the "Baseline" timepoint and not to the "1-Year" timepoint.
 
 Create components that are likely to be completed in separate study appointments to eventually complete all that's required for its parent timepoint. Is a single subject asked to participate in an interview, a blood draw, and cognitive testing, but only at Baseline? Then create separate "Interview", "Blood Draw", and "Cognitive Testing" components for the "Baseline" timepoint. Is only the "Interview" completed at the "1-Year" timepoint? Then add it as another component for that follow-up timepoint.
 
 Once you have added all your timepoints and components, you are ready to move on to the Resources page. But don't forget about the My Study page! It is your central control page for adding timepoints, renaming them, and adding, editing, or deleting components as needed.
 
-2. The Resources Page Build for Utilization Tracking
------------------------------------------------------
+2. The Resources Page - Utilization Tracking
+--------------------------------------------
 Now that you have the timepoints and components set up for your study, go to the Resources page to add the resources your study uses for appointments.
 
 Components allocate three typical types of resources built into the site. Here they are listed with examples of each:
@@ -54,12 +54,12 @@ Consequently, the Resources page is simple. Add a row to add a resource. Select 
 
 Add, edit, or delete subjects from the Subjects page.
 
-##Subject IDs
+###Subject IDs
 Subject IDs are typed in because ID assignment can change or skip order in a study for a multitude of reasons. Perhaps you only want to track subjects found eligible, omitting IDs that don't make it into the study. Or maybe there is a subject coding scheme unique to your study, such as odd numbers for eligible and even for ineligible, a required number of leading zeros, or prefixes for multi-site studies.
 
 This is why you can simply type in any desired subject ID. The only requirements are that they are 1) in number form and 2) unique.
 
-##Privacy
+###Privacy
 The initials field is the only other value you can enter for a subject. This is because HIPAA guidelines require privacy for any information that can identify a patient or research participant. rsTRACK.org is built to track subjects anonymously, so subject attributes like gender, address, health status, and so on are omitted to minimalize risk of mistaken disclosure.
 
 If you use rsTRACK.org for coordination, keep identifiable information separately. Check your research protocol or consent form for the specific policies enforced by your institution and/or research group.
@@ -68,7 +68,7 @@ If you use rsTRACK.org for coordination, keep identifiable information separatel
 ------------------------
 The Appointments page is where you can view all study goings on in one place.
 
-##Book Appointments
+###Book Appointments
 Each row represents an appointment. Add a row to book a new (or log an old) appointment. Each can consist of:
 
 * Subject ID - Select from a dropdown list of your study's subject IDs. The Initials field will automatically update based on your selection.
@@ -82,13 +82,13 @@ Each row represents an appointment. Add a row to book a new (or log an old) appo
 
 Multiple appointments can be booked for the same timepoint & component combination. Subjects may need to come in one or more times for any given component, especially if your component is time-consuming (e.g. a 6-hour cognitive testing battery).
 
-##Filtering Appointments
+###Filtering Appointments
 Use the filter box in the upper right-hand corner above the appointments table to filter your appointments by keyword. It will filter the table rows as you type to only those that contain your keyword. With this feature, you can customize your table view based on what you'd like to track. Enter a subject initials, for instance, to view only the appointments completed for a specific subject. Enter a staff member's name to view all the appointments they're responsible for. Enter a location name to see only the appointments that have taken place there. Enter a date if you need to find out who was seen on a particular day. With this tool, you can view only what you need to.
 
-##Edit Appointments
+###Edit Appointments
 Modifying appointments is simple. Select the appointment row you want to change. An edit box will appear below the appointment table. It will have all the original values filled for you to see. Make any changes in the form and click the Edit Appointment button when finished.
 
-##Cancel Appointments
+###Cancel Appointments
 Cancelling appointments is simple as well. When you select an appointment row, a cancel box will appear below the appointment table as well. Cancellations are final and require just one click.
 
 
