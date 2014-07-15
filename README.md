@@ -8,8 +8,6 @@ rsTRACK is a PHP-, jQuery-, and Bootstrap- driven web application built to track
 - Tracking subject progress to completion
 - Tracking how your study's resources are being utilized
 
-In research coordination, these essential tasks are heavily interwoven with one another. RSTRACK is intended to be an all-in-one tool.
-
 ![Screencast](public/img/screencast.gif)
 
 Database
