@@ -20,5 +20,10 @@
         <div>
             or <a href="register.php" class="btn btn-success">register</a>
         </div>
+    <div class="page-header">
+        <h2><small>A Fall 2013 CS50 Final Project by <a href="http://www.github.com/rserur" target="_blank">Rachael Serur</a></small></h2>
+    </div>
+    <h3><small><a href="documentation.php">View Documentation</a></small></h3>
+    <h3><small><a href="design.php">View Design</a></small></h3>
     </div>
 </div>

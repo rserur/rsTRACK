@@ -1,5 +1,12 @@
 <div class="row">
     <div class="col-md-12">
+        <div class="pull-right">
+          <h2><a href="/">Home</a></h2>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
     <h1>Documentation <small><span class="text-info">Welcome</span> to <span class="text-primary">RS<strong>TRACK</strong>.org</span>! Here's how to get started.</small></h1>
     </div>
 </div>
@@ -8,7 +15,7 @@
     <div class="col-md-12">
 
         <h2>What is RS<strong>TRACK</strong>.org?</h2>
-        <p>At RS<strong>TRACK</strong>.org, you can track all appointments booked for a clinical research study. This site is tailored for clinical research coordinators and assistants, though you may find it can come in handy for animal studies as well! RS<strong>TRACK</strong> is built for three things:</p> 
+        <p>At RS<strong>TRACK</strong>.org, you can track all appointments booked for a clinical research study. This site is tailored for clinical research coordinators and assistants, though you may find it can come in handy for animal studies as well! RS<strong>TRACK</strong> is built for three things:</p>
 
         <ol>
             <li>Scheduling study appointments</li>
@@ -19,7 +26,7 @@
         <p>In research coordination, these essential tasks are heavily interwoven. RS<strong>TRACK</strong> is an all-in-one tool to help you accomplish them. Here's how to use it:</p>
 
         <h2>1. The <a href="mystudy.php" target="_blank">My Study</a> Page <small>Build your Study</small></h2>
-      
+
         <p>Now that you are registered, your username controls your study. Use the <a href="mystudy.php" target="_blank">My Study</a> page to build the framework of your study.</p>
 
         <h3>Timepoints</h3>
@@ -43,7 +50,7 @@
         <p>Components allocate three typical types of resources built into the site. Here they are listed with examples of each:</p>
 
             <ol>
-                <li><strong>Staff</strong> - the names of clinicians, radiologists, assistants, or psychometricians</li> 
+                <li><strong>Staff</strong> - the names of clinicians, radiologists, assistants, or psychometricians</li>
                 <li><strong>Locations</strong> - specific room numbers, hospitals, clinics, or offices</li>
                 <li><strong>Materials</strong> - interview binders, biological sampling kits, cognitive testing kits, or consent forms</li>
             </ol>
@@ -83,11 +90,11 @@
             <li><strong>Date</strong> - Select the date of the appointment from a dropdown calendar. This field can be left blank, so you can track the need for an appointment before your team has finalized a date for it.</li>
             <li><strong>Start & End Time</strong> - Enter a start and end time for your appointment. These fields can also be left blank in case you'll finalize a time later.</li>
             <li><strong>Staff</strong> - Select the staff member that will be responsible for running the subject through the appointment's chosen component.</li>
-            <li><strong>Location</strong> - Select where the appointment will take place.</li> 
+            <li><strong>Location</strong> - Select where the appointment will take place.</li>
             <li><strong>Materials</strong> - What will staff need in order to complete the component? Select here.</li>
         </ul>
 
-        <p>Multiple appointments can be booked for the same timepoint & component combination. Subjects may need to come in one or more times for any given component, especially if your component is time-consuming (e.g. a 6-hour cognitive testing battery). 
+        <p>Multiple appointments can be booked for the same timepoint & component combination. Subjects may need to come in one or more times for any given component, especially if your component is time-consuming (e.g. a 6-hour cognitive testing battery).
 
         <h3>Filtering Appointments</h3>
 

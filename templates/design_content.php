@@ -1,18 +1,25 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="pull-right">
+          <h2><a href="/">Home</a></h2>
+        </div>
+    </div>
+</div>
 <div class="doc">
   <h1>Design <small class>Technical details of RS<strong>TRACK</strong>.org</small></h1>
-
-    <h2>DreamHost and MAMP</h2>
-
-    <p>I began by uploading the skeleton of my site to my free DreamHost account via FTP and planning my directory structure (includes, public, and templates) on an MVC model based on pset7, chmoding as needed. It quickly became evident that I'd need an instant solution similar to CS50 Appliance, but with more speed and programs to choose from, so I configured my MacBook with <a href="http://www.mamp.info" target="_blank">MAMP</a>, short for Macintosh, Apache, MySQL, and PHP, a free program that installs all the aforementioned technologies as a local server enivonment on my computer.</p>
-
-    <p>I began saving all my files into my Dropbox and configured my MAMP localhost to direct to an rstrack directory. I needed to reenter my "includes/constants.php" file definitions to localhost settings, but MAMP made that easy.</p>
-
-    <p>With MAMP, I thereafter worked locally on my project with <a href="http://www.sublimetext.com" target="_blank">Sublime Text</a>, learning how to use a few helpful plugin packages along the way (BracketHighlighter, a Less > Css compiler, Emmet, SublimeLinter) that <em>really</em> helped me navigate my code, though I learned the hard way (that is, late in the game) that I was better off not delving too deeply into their syntaxes and settings for time's sake.</p>
-
 
   <h2>mySQL Database</h2>
 
   <p>I initially began to build the underlying mySQL database for rsTRACK.org with phpMyAdmin, as installed with Dreamhost and MAMP. My process was to first write much of my site's form HTML on each page to get an idea of how to structure the interface, then create the corresponding databases based on what data my site would collect for each section.</p>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>Final Database Model</h3>
+    </div>
+    <div class="panel-body">
+        <img src="img/rstrack_EER.png" class="img-responsive">
+    </div>
+  </div>
 
   <h3>Basic Structure</h3>
 
@@ -33,18 +40,9 @@
 
   <h3>Diagramming</h3>
 
-  <p>I downloaded <a href="http://www.mysql.com/downloads/tools/workbench">mySQL Workbench</a> (Community Edition) to visually figure out a way to allow that level of customization with mySQL. I learned how to "reverse engineer" my existing database into an EER diagam, modify the diagram in the program, and then synchronize the model with my localhost database.</p> 
+  <p>I downloaded <a href="http://www.mysql.com/downloads/tools/workbench">mySQL Workbench</a> (Community Edition) to visually figure out a way to allow that level of customization with mySQL. I learned how to "reverse engineer" my existing database into an EER diagam, modify the diagram in the program, and then synchronize the model with my localhost database.</p>
 
   <p>Diagramming helped me realize that such customizability would require too much control given to the user (perhaps creating tables for each) and could quickly result in an extremely large database beyond the scope of this project, so that is how I decided on "staff", "location", and "materials" columns instead under "resources". With these three categories also agnostic to study purpose or design, it could still be flexible and customizable enough for any study.</p>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">
-        <h3>Final Database Model</h3>
-    </div>
-    <div class="panel-body">
-        <img src="img/rstrack_EER.png" class="img-responsive">
-    </div>
-  </div>
 
   <h3>Indexes</h3>
 
