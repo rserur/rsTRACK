@@ -2,13 +2,11 @@
 ==========
 A Fall 2013 [CS50](http://cs50.harvard.edu/) Final Project
 
-rsTRACK is a PHP-, jQuery-, and Bootstrap- driven web application built to track all appointments booked for a clinical research study, tailored for clinical research coordinators and assistants. RSTRACK was created to assist in:
+rsTRACK is a PHP-, mySQL-, jQuery-, and Bootstrap- driven web application built to track all appointments booked for a clinical research study, tailored for clinical research coordinators and assistants. RSTRACK was created to assist in:
 
 - Scheduling study appointments
 - Tracking subject progress to completion
 - Tracking how your study's resources are being utilized
-
-In research coordination, these essential tasks are heavily interwoven with one another. RSTRACK is intended to be an all-in-one tool.
 
 ![Screencast](public/img/screencast.gif)
 
