@@ -8,6 +8,8 @@ rsTRACK is a PHP-, mySQL-, jQuery-, and Bootstrap- driven web application built 
 - Tracking subject progress to completion
 - Tracking how your study's resources are being utilized
 
+It was intentionally built without a PHP framework in order to better learn the language for the first time.
+
 ![Screencast](public/img/screencast.gif)
 
 Database
